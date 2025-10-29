@@ -5,15 +5,15 @@ def main():
     user_choice = get_welcome_input()
 
     if user_choice == "1":
-        value = get_value()
-        return Distance.kilometer_to_miles(value)
-        
-    elif user_choice == "2":
-        value = get_value()
-        return Distance.miles_to_kilometer(value)
+        value, unit = get_value_and_unit()
+        return Distance.distance_converter(value, unit)
     
+    elif user_choice == '2':
+        length, unit = get_length_and_unit()
+        return Distance.length_converter(length, unit)
+
     elif user_choice == "3":
-        weight, unit = get_length_and_unit()
+        weight, unit = get_weight_and_unit()
         return Weight.weigth_converter(weight, unit)
     
     else:

@@ -1,11 +1,18 @@
 def get_welcome_input():
     print("Welcome to the Convertisseur Tout Terrain (CTT).")
-    return input("CTT available: km to miles (1), miles to km (2), weigth converter (3): ")
+    return input("CTT available: km/miles (1), cm/inches (2), kg/pounds (3): ")
 
-def get_value():
-    return input("Value to convert: ")
+def get_value_and_unit():
+    value = input("Value to convert: ")
+    unit = input("Enter the unit (km, miles): ")
+    return value, unit
 
 def get_length_and_unit():
-    weight = float(input("Enter the weight: "))
+    length = input("Length to convert: ")
+    unit = input("Enter the unit (cm, inch): ")
+    return length, unit
+
+def get_weight_and_unit():
+    weight = input("Enter the weight: ")
     unit = input("Enter the unit (kg, pds): ")
     return weight, unit
