@@ -5,11 +5,25 @@ from user_inputs import *
 def currency_converter():
     pass
 
-# Function for size converter
-def size_converter():
-    pass
+class Temperature:
+    def __init__(self, temp, unit):
+        self.temp = temp
+        self.unit = unit
 
-# Function for weigth converter
+    def temp_converter(temp, unit):
+        temp = float(temp)
+        if unit.lower() == 'c':
+            result = round(((9/5 * temp) + 32), 2)
+            return (f"{temp}°C = {result}°F.")
+        
+        if unit.lower() == 'f':
+            result = round((5/9 * (temp - 32)), 2)
+            return (f"{temp}°F = {result}°C.")
+        
+        else:
+            print("Error: wrong input")
+            return None
+        
 class Weight:
     def __init__(self, weight, unit):
         self.unit = unit
@@ -29,7 +43,6 @@ class Weight:
             print("Error: wrong input")
             return None
             
-# Converter for distances
 class Distance:
     def __init__(self, value, unit):
         self.value = value

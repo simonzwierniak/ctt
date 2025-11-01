@@ -1,4 +1,4 @@
-from functions import Distance, Weight
+from functions import Distance, Weight, Temperature
 from user_inputs import *
 
 def main():
@@ -16,6 +16,10 @@ def main():
         weight, unit = get_weight_and_unit()
         return Weight.weigth_converter(weight, unit)
     
+    elif user_choice == "4":
+        temp, unit = get_temp_and_unit()
+        return Temperature.temp_converter(temp, unit)
+
     else:
         print("Error: wrong input")
         return None
