@@ -29,7 +29,7 @@ class Weight:
         self.unit = unit
         self.weight = weight
 
-    def weigth_converter(weight, unit):
+    def weight_converter(weight, unit):
         weight = float(weight)
         if unit.lower() == 'kg':
             result = round((weight * 2.204623), 2) # arrondi à deux chiffres après la virgule

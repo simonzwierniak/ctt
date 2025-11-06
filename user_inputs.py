@@ -8,16 +8,16 @@ def get_value_and_unit():
     return value, unit
 
 def get_length_and_unit():
-    length = input("Length to convert: ")
+    value = input("Length to convert: ")
     unit = input("Enter the unit (cm, inch): ")
-    return length, unit
+    return value, unit
 
 def get_weight_and_unit():
-    weight = input("Enter the weight: ")
+    value = input("Enter the weight: ")
     unit = input("Enter the unit (kg, pds): ")
-    return weight, unit
+    return value, unit
 
 def get_temp_and_unit():
-    temp = input("Enter the temperature: ")
+    value = input("Enter the temperature: ")
     unit = input("Enter the unit (C, F): ")
-    return temp, unit
+    return value, unit
