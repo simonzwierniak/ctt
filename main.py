@@ -17,7 +17,7 @@ def main():
     args = parser.parse_args()
     
     if args.user_get_currencies:
-        return Currency.get_available_currencies()
+        return Currency.format_currencies_for_display()
 
     if args.user_value and args.user_unit:  # If command line arguments are provided
         user_value = args.user_value

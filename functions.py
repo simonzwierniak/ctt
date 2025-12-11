@@ -8,7 +8,6 @@ api_key = os.getenv("API_key")
 api_domain = "https://v6.exchangerate-api.com/v6" 
 
 class Currency:
-
     @staticmethod
     def get_available_currencies():
         if not api_key:
